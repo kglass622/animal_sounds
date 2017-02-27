@@ -1,10 +1,14 @@
 class Fox
 
-		attr_reader :name, :sound
+	attr_reader :name, :sound #gives acces to @name and @sound
 
-	def initialize(name)
+	def initialize(name, sound)
 		@name=name
-		@sound='????'
+		@sound='???'
+	end
+
+		def get_sound
+		@name + ' says ' + @sound
 	end
 
 

@@ -1,12 +1,16 @@
-class Dog
+class Dog	
 
-		attr_reader :name, :sound
+	attr_reader :name, :sound
 
-	def initialize(name)
+	
+
+	def initialize(name, sound)
 		@name=name
 		@sound='bark'
 	end
 
-
+		def get_sound
+		@name + ' says ' + @sound
+	end
 
 end
